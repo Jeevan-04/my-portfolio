@@ -337,8 +337,6 @@ table td:first-child {
 
 
 
-
-
 .responsive-links {
     height: 25px;
     width: 99.8%;
@@ -360,6 +358,7 @@ table td:first-child {
     color: black;
     white-space: nowrap;
     flex-shrink: 0; /* Prevent links from shrinking */
+    min-width: fit-content;
 }
 
 /* Responsive Adjustments */
@@ -372,17 +371,20 @@ table td:first-child {
 @media (max-width: 600px) {
     .responsive-links a {
         font-size: 16px; /* Adjust font size for small screens */
+        margin-right: 10px; /* Reduce margin */
     }
 }
 
 @media (max-width: 480px) {
     .responsive-links a {
         font-size: 14px; /* Adjust font size for extra small screens */
+        margin-right: 8px; /* Further reduce margin */
     }
 }
 
 @media (max-width: 360px) {
     .responsive-links a {
         font-size: 12px; /* Further adjust font size for very small screens */
+        margin-right: 5px; /* Further reduce margin */
     }
 }
