@@ -337,6 +337,8 @@ table td:first-child {
 
 
 
+
+
 .responsive-links {
     height: 25px;
     width: 99.8%;
@@ -357,6 +359,7 @@ table td:first-child {
     text-decoration: none;
     color: black;
     white-space: nowrap;
+    flex-shrink: 0; /* Prevent links from shrinking */
 }
 
 /* Responsive Adjustments */
@@ -375,5 +378,11 @@ table td:first-child {
 @media (max-width: 480px) {
     .responsive-links a {
         font-size: 14px; /* Adjust font size for extra small screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .responsive-links a {
+        font-size: 12px; /* Further adjust font size for very small screens */
     }
 }
