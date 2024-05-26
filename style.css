@@ -47,8 +47,8 @@ body, html {
     margin: 10px; /* Added margin to separate from the edge of the window */
     background-color: white;
     border: 2px solid black;
-    max-width: 99.8%; /* Adjusted max-width to prevent overflowing */
-    min-height: 98vh; /* Adjusted min-height to cover 98% of the viewport height */
+    width: calc(100% - 20px); /* Adjusted width to prevent overflowing */
+    min-height: 98vh; /* Ensure it covers most of the viewport height */
     overflow: auto; /* Enable scrolling within the desktop */
 }
 
@@ -292,7 +292,7 @@ table td:first-child {
     }
 
     #desktop {
-        min-height: 100vh; /* Adjusted min-height to cover the entire viewport height */
+        min-height: 100vh; /* Ensure it covers the entire viewport height */
     }
 }
 
@@ -308,7 +308,7 @@ table td:first-child {
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     overflow: hidden; /* Prevent background scroll */
 }
-  
+
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -319,7 +319,7 @@ table td:first-child {
     max-height: 70%; /* Set a max height */
     overflow-y: hidden; /* Enable vertical scroll */
 }
-  
+
 .modal-body {
     max-height: 60vh;
     overflow-y: auto;
