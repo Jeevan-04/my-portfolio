@@ -339,7 +339,7 @@ table td:first-child {
 
 .responsive-links {
     height: 25px;
-    width: 100%; /* Make sure it takes full width */
+    width: 100%; /* Ensure full width */
     background-color: rgb(249, 249, 115);
     border: 2px solid black;
     display: flex;
