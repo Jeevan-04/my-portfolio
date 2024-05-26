@@ -336,13 +336,12 @@ table td:first-child {
 }
 
 
-
 .responsive-links {
-    height: 25px;
-    width: 100%; /* Ensure full width */
+    width: 100%;
     background-color: rgb(249, 249, 115);
     border: 2px solid black;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     overflow-x: auto;
     white-space: nowrap;
@@ -352,47 +351,46 @@ table td:first-child {
 
 .responsive-links a {
     height: 25px;
-    padding: 1px;
-    margin-right: 15px;
-    font-size: 20px; /* Default font size */
+    line-height: 25px; /* Center align text vertically */
+    padding: 0 10px; /* Adjust padding to create space around text */
+    font-size: 16px; /* Base font size */
     text-decoration: none;
     color: black;
-    white-space: nowrap;
     flex-shrink: 0; /* Prevent links from shrinking */
-    min-width: fit-content;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .responsive-links a {
-        font-size: 18px; /* Adjust font size for medium screens */
+        font-size: 14px; /* Adjust font size for medium screens */
+        padding: 0 8px; /* Adjust padding for medium screens */
     }
 }
 
 @media (max-width: 600px) {
     .responsive-links a {
-        font-size: 16px; /* Adjust font size for small screens */
-        margin-right: 10px; /* Reduce margin */
+        font-size: 12px; /* Adjust font size for small screens */
+        padding: 0 6px; /* Adjust padding for small screens */
     }
 }
 
 @media (max-width: 480px) {
     .responsive-links a {
-        font-size: 14px; /* Adjust font size for extra small screens */
-        margin-right: 8px; /* Further reduce margin */
+        font-size: 10px; /* Adjust font size for extra small screens */
+        padding: 0 4px; /* Adjust padding for extra small screens */
     }
 }
 
 @media (max-width: 360px) {
     .responsive-links a {
-        font-size: 12px; /* Further adjust font size for very small screens */
-        margin-right: 5px; /* Further reduce margin */
+        font-size: 8px; /* Adjust font size for very small screens */
+        padding: 0 3px; /* Adjust padding for very small screens */
     }
 }
 
 @media (max-width: 320px) {
     .responsive-links a {
-        font-size: 10px; /* Further reduce font size for very small screens */
-        margin-right: 3px; /* Further reduce margin */
+        font-size: 6px; /* Adjust font size for very small screens */
+        padding: 0 2px; /* Adjust padding for very small screens */
     }
 }
